@@ -3,6 +3,8 @@
     image_transport: raw
     family: 36h11
     # Global tag edge size in meters. Overridden at launch via `tag_size_mm`.
+    # Recommended: 80 mm (0.080) for the moving tag — robust to ~30° tilt and
+    # motion blur at 30 fps from ~1.6 m; 64 mm is acceptable for a fixed tag.
     size: 0.064
     max_hamming: 0
     qos_profile: sensor_data
