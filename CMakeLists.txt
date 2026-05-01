@@ -147,6 +147,15 @@ install(DIRECTORY launch
     DESTINATION share/${PROJECT_NAME}
 )
 
+install(DIRECTORY rviz
+    DESTINATION share/${PROJECT_NAME}
+)
+
+install(PROGRAMS scripts/pose_printer.py
+    DESTINATION lib/${PROJECT_NAME}
+    RENAME pose_printer
+)
+
 if(BUILD_TESTING)
   set(ament_cmake_clang_format_CONFIG_FILE "${CMAKE_SOURCE_DIR}/.clang-format")
   find_package(ament_lint_auto REQUIRED)
