@@ -1,0 +1,18 @@
+# Local Claude Code config / instructions — not part of the package
+.claude/
+
+# Build artifacts
+build/
+install/
+log/
+
+# Editor / OS
+*.swp
+*.swo
+.vscode/
+.idea/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
